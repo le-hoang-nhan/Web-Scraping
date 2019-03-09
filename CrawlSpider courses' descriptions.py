@@ -9,7 +9,7 @@ class DC_Description_Spider(scrapy.Spider):
   name = "dc_chapter_spider"
   # start_requests method
   def start_requests(self):
-    yield scrapy.Request(url = url_short, callback = self.parse_front)
+    yield scrapy.Request(url = 'https://assets.datacamp.com/production/repositories/2560/datasets/19a0a26daa8d9db1d920b5d5607c19d6d8094b3b/all_short', callback = self.parse_front)
   # First parsing method
   def parse_front(self, response):
     course_blocks = response.css('div.course-block')
