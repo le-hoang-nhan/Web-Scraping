@@ -14,7 +14,6 @@ class YourSpider(scrapy.Spider):
     yield scrapy.Request(url = url_short, callback=self.parse)
       
   def parse(self, response):
-    # My version of the parser you wrote in the previous part
     crs_titles = response.xpath('//h4[contains(@class,"block__title")]/text()').extract()
     crs_descrs = response.xpath('//p[contains(@class,"block__description")]/text()').extract()
     for crs_title, crs_descr in zip( crs_titles, crs_descrs ):
