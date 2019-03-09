@@ -5,14 +5,14 @@ Scraping Skills
 
 Objective: Scrape a website computationally
 
-How? We decide to use scrapy
+How? use scrapy
 
-How? We need to work with:
+How? work with:
 
 Selector and Response objects
 
-Maybe even create a Spider
+Create a Spider
 
-How? We need to learn XPath or CSS Locator notation
+How? use XPath or CSS Locator notation
 
 How? Understand the structure of HTML
